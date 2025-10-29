@@ -1,0 +1,1176 @@
+/* ========================================
+   ACTIVIDAD 2.1 - Hoja de estilos externa
+   ======================================== */
+
+/* ========================================
+   ACTIVIDAD 3.1 - Selector universal
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   ACTIVIDAD 4.1 - Unidades em para textos
+   ======================================== */
+
+/* ========================================
+   ACTIVIDAD 5.1 - Colores y fondos
+   ======================================== */
+
+/* Paleta de colores */
+:root {
+    --verde-principal: #2E7D32;
+    --naranja-principal: #F57C00;
+    --gris-claro: #F5F5F5;
+    --gris: #AEA7A7;
+    --negro-suave: #333333;
+    --negro: #000000;
+    --blanco: #ffffff;
+}
+
+/* Etiquetas de sección - Colores y fondos */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--negro-suave);
+    background-color: var(--blanco);
+    font-size: 1em; /* 16px base */
+}
+
+header {
+    background-color: var(--gris);
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0.125em 0.25em rgba(0,0,0,0.1);
+}
+
+nav {
+    background-color: transparent;
+}
+
+nav ul {
+    background-color: transparent;
+}
+
+footer {
+    background-color: var(--gris);
+    padding: 2em;
+    text-align: center;
+}
+
+section {
+    background-color: var(--blanco);
+}
+
+aside {
+    background-color: var(--gris-claro);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    margin: 1em 0;
+}
+
+address {
+    background-color: transparent;
+    font-style: normal;
+    color: var(--negro-suave);
+}
+
+/* Títulos - Colores y fondos */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em; /* 32px */
+    font-weight: 700;
+    color: var(--verde-principal);
+    background-color: transparent;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em; /* 24px */
+    font-weight: 700;
+    color: var(--naranja-principal);
+    background-color: transparent;
+    margin-bottom: 0.75em;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em; /* 20px */
+    font-weight: 700;
+    color: var(--verde-principal);
+    background-color: transparent;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125em; /* 18px */
+    font-weight: 600;
+    color: var(--naranja-principal);
+    background-color: transparent;
+    margin-bottom: 0.5em;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em; /* 16px */
+    font-weight: 600;
+    color: var(--verde-principal);
+    background-color: transparent;
+    margin-bottom: 0.25em;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875em; /* 14px */
+    font-weight: 600;
+    color: var(--naranja-principal);
+    background-color: transparent;
+    margin-bottom: 0.25em;
+}
+
+/* Enlaces - Colores y fondos */
+a {
+    color: var(--negro);
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Etiquetas de contenido y texto - Colores y fondos */
+p {
+    color: var(--negro-suave);
+    background-color: transparent;
+    margin-bottom: 1em;
+    font-size: 1em; /* 16px */
+}
+
+span {
+    color: inherit;
+    background-color: transparent;
+}
+
+strong {
+    color: var(--negro);
+    background-color: transparent;
+    font-weight: 700;
+}
+
+em {
+    color: var(--negro-suave);
+    background-color: transparent;
+    font-style: italic;
+}
+
+small {
+    color: var(--gris);
+    background-color: transparent;
+    font-size: 0.875em; /* 14px */
+}
+
+mark {
+    background-color: var(--naranja-principal);
+    color: var(--blanco);
+    padding: 0.125em 0.25em;
+    border-radius: 0.25em;
+}
+
+/* Listas */
+ul, ol {
+    background-color: transparent;
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+li {
+    color: var(--negro-suave);
+    background-color: transparent;
+    margin-bottom: 0.5em;
+}
+
+/* ========================================
+   ACTIVIDAD 6.1 - Propiedades de texto
+   ======================================== */
+
+/* Títulos - Propiedades de texto */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    text-transform: none;
+    text-shadow: none;
+    letter-spacing: 0.025em;
+    word-spacing: normal;
+    line-height: 1.2;
+}
+
+/* Párrafos - Propiedades de texto */
+p {
+    text-align: left;
+    text-indent: 0;
+    text-transform: none;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: 1.6;
+}
+
+/* Enlaces - Propiedades de texto */
+a {
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+/* Listas - Propiedades de texto */
+ul, ol {
+    text-align: left;
+}
+
+li {
+    text-align: left;
+    text-transform: none;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+/* ========================================
+   ACTIVIDAD 7.1 - Propiedades de fuentes
+   ======================================== */
+
+/* Fuentes base */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1em; /* 16px */
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    font-stretch: normal;
+}
+
+/* Títulos - Propiedades de fuentes */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    font-stretch: normal;
+}
+
+h2, h4, h6 {
+    font-weight: 600;
+}
+
+/* Párrafos - Propiedades de fuentes */
+p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    font-stretch: normal;
+}
+
+/* Enlaces - Propiedades de fuentes */
+a {
+    font-family: inherit;
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    font-stretch: normal;
+}
+
+/* ========================================
+   ACTIVIDAD 8.1 - Botonera nav y aside
+   ======================================== */
+
+/* Botonera de navegación */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    background-color: transparent;
+}
+
+.nav-menu li {
+    position: relative;
+    background-color: transparent;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--negro);
+    font-weight: 600;
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 0.125em solid transparent;
+    display: block;
+    text-align: center;
+    min-width: 7em;
+}
+
+.nav-menu a:hover {
+    background-color: var(--naranja-principal);
+    color: var(--blanco);
+    text-decoration: none;
+    border-color: var(--naranja-principal);
+    transform: translateY(-0.125em);
+}
+
+/* Dropdown de navegación */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--blanco);
+    min-width: 12.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.1);
+    border-radius: 0.5em;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-0.625em);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-menu li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.75em 1em;
+    border-bottom: 0.0625em solid #eee;
+    background-color: var(--blanco);
+    color: var(--negro-suave);
+    text-align: left;
+    min-width: auto;
+    border-radius: 0;
+}
+
+.dropdown a:last-child {
+    border-bottom: none;
+}
+
+.dropdown a:hover {
+    background-color: var(--gris-claro);
+    color: var(--naranja-principal);
+}
+
+/* Estilos para aside */
+aside {
+    background-color: var(--gris-claro);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    margin: 1em 0;
+    border-left: 0.25em solid var(--verde-principal);
+}
+
+aside h3 {
+    color: var(--verde-principal);
+    margin-bottom: 1em;
+    font-size: 1.25em;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside li {
+    padding: 0.5em 0;
+    border-bottom: 0.0625em solid rgba(0,0,0,0.1);
+}
+
+aside li:last-child {
+    border-bottom: none;
+}
+
+aside a {
+    color: var(--negro-suave);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+aside a:hover {
+    color: var(--naranja-principal);
+}
+
+/* ========================================
+   ACTIVIDAD 9.1 - Estilos de tabla
+   ======================================== */
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    background-color: var(--blanco);
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.1);
+}
+
+table caption {
+    caption-side: bottom;
+    font-size: 0.875em;
+    color: var(--gris);
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+th, td {
+    padding: 0.75em 1em;
+    text-align: center;
+    border: 0.0625em solid #ddd;
+    background-color: var(--blanco);
+}
+
+th {
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+td {
+    color: var(--negro-suave);
+    font-size: 0.9em;
+}
+
+/* ========================================
+   ACTIVIDAD 10.1 - Position fixed
+   ======================================== */
+
+/* Menú fijo */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--gris);
+    backdrop-filter: blur(0.625em);
+}
+
+/* Ajustar contenido para el header fijo */
+body {
+    padding-top: 5em; /* Espacio para el header fijo */
+}
+
+/* Icono WhatsApp fijo */
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    width: 3.5em;
+    height: 3.5em;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.25em 0.75em rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.whatsapp-fixed:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.375em 1em rgba(0,0,0,0.4);
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.whatsapp-fixed i {
+    font-size: 1.5em;
+}
+
+/* ========================================
+   ACTIVIDAD 11.1 - Pseudo-elementos y pseudo-clases
+   ======================================== */
+
+/* Pseudo-elemento :first-child para tablas */
+table tr:first-child th {
+    background-color: var(--naranja-principal);
+    color: var(--blanco);
+}
+
+/* Pseudo-clase :nth-child para filas alternas */
+table tr:nth-child(odd) {
+    background-color: var(--gris-claro);
+}
+
+table tr:nth-child(even) {
+    background-color: var(--blanco);
+}
+
+table tr:nth-child(odd) td {
+    background-color: var(--gris-claro);
+}
+
+table tr:nth-child(even) td {
+    background-color: var(--blanco);
+}
+
+/* Pseudo-clases para enlaces */
+/* Enlaces en navegación */
+.nav-menu a:link {
+    color: var(--negro);
+    background-color: transparent;
+}
+
+.nav-menu a:visited {
+    color: var(--negro-suave);
+    background-color: transparent;
+}
+
+.nav-menu a:hover {
+    color: var(--blanco);
+    background-color: var(--naranja-principal);
+    text-decoration: none;
+}
+
+.nav-menu a:active {
+    color: var(--blanco);
+    background-color: var(--verde-principal);
+}
+
+/* Enlaces en aside */
+aside a:link {
+    color: var(--negro-suave);
+    background-color: transparent;
+}
+
+aside a:visited {
+    color: var(--gris);
+    background-color: transparent;
+}
+
+aside a:hover {
+    color: var(--naranja-principal);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+aside a:active {
+    color: var(--verde-principal);
+    background-color: transparent;
+}
+
+/* Enlaces en footer */
+.footer-section a:link {
+    color: var(--negro);
+    background-color: transparent;
+}
+
+.footer-section a:visited {
+    color: var(--negro-suave);
+    background-color: transparent;
+}
+
+.footer-section a:hover {
+    color: var(--naranja-principal);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.footer-section a:active {
+    color: var(--verde-principal);
+    background-color: transparent;
+}
+
+/* Enlaces generales */
+a:link {
+    color: var(--negro);
+    background-color: transparent;
+}
+
+a:visited {
+    color: var(--negro-suave);
+    background-color: transparent;
+}
+
+a:hover {
+    color: var(--naranja-principal);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--verde-principal);
+    background-color: transparent;
+}
+
+/* ========================================
+   ACTIVIDAD 12.1 - Estilos de formulario
+   ======================================== */
+
+/* Contenedor de formulario */
+.form-container {
+    max-width: 37.5em;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: var(--gris-claro);
+    border-radius: 0.75em;
+    box-shadow: 0 0.25em 0.75em rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: var(--verde-principal);
+}
+
+/* Grupos de formulario */
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    color: var(--negro-suave);
+    font-size: 1em;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.75em;
+    border: 0.125em solid #ddd;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: var(--blanco);
+    color: var(--negro-suave);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--naranja-principal);
+    box-shadow: 0 0 0 0.1875em rgba(245, 124, 0, 0.2);
+    background-color: var(--blanco);
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    min-height: 6.25em;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* Checkbox y radio */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5em;
+    transform: scale(1.2);
+}
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.checkbox-group label,
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Botones */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    background-color: var(--naranja-principal);
+    color: var(--blanco);
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Open Sans', Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background-color: var(--verde-principal);
+    transform: translateY(-0.125em);
+    box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.2);
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+    transform: translateY(0);
+    box-shadow: 0 0.125em 0.25em rgba(0,0,0,0.2);
+}
+
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+    outline: 0.125em solid var(--verde-principal);
+    outline-offset: 0.125em;
+}
+
+/* Botón secundario */
+.btn-secondary {
+    background-color: transparent;
+    color: var(--naranja-principal);
+    border: 0.125em solid var(--naranja-principal);
+}
+
+.btn-secondary:hover {
+    background-color: var(--naranja-principal);
+    color: var(--blanco);
+}
+
+/* Grupos de botones */
+.button-group {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+/* Mensajes de validación */
+.error-message {
+    color: #d32f2f;
+    font-size: 0.875em;
+    margin-top: 0.25em;
+    display: block;
+}
+
+.success-message {
+    color: var(--verde-principal);
+    font-size: 0.875em;
+    margin-top: 0.25em;
+    display: block;
+}
+
+/* Campos requeridos */
+.required {
+    color: #d32f2f;
+}
+
+/* ========================================
+   Estilos adicionales para el proyecto
+   ======================================== */
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--verde-principal);
+}
+
+.logo-icon {
+    width: 2.5em;
+    height: 2.5em;
+    background-color: var(--verde-principal);
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+}
+
+/* Language selector */
+.language-selector {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.language-selector button {
+    background: none;
+    border: 0.125em solid var(--verde-principal);
+    color: var(--verde-principal);
+    padding: 0.5em 1em;
+    border-radius: 1.25em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 0.875em;
+}
+
+.language-selector button:hover,
+.language-selector button.active {
+    background-color: var(--verde-principal);
+    color: var(--blanco);
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect width="1200" height="400" fill="%23f0f0f0"/><text x="600" y="200" text-anchor="middle" font-size="48" fill="%23666">Supermercado DIW</text><text x="600" y="250" text-anchor="middle" font-size="24" fill="%23888">Productos frescos y de calidad</text></svg>');
+    background-size: cover;
+    background-position: center;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.banner-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-shadow: 0.125em 0.125em 0.25em rgba(0,0,0,0.5);
+}
+
+.banner-content p {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--naranja-principal);
+    text-shadow: 0.0625em 0.0625em 0.125em rgba(0,0,0,0.5);
+}
+
+/* Categorías */
+.categories {
+    background-color: var(--gris-claro);
+    padding: 3em 2em;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625em, 1fr));
+    gap: 2em;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+.category-card {
+    background-color: var(--blanco);
+    border: 0.125em solid var(--negro);
+    border-radius: 0.5em;
+    padding: 2em;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-0.3125em);
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+    border-color: var(--naranja-principal);
+}
+
+.category-card h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--verde-principal);
+    margin-bottom: 1em;
+}
+
+.category-card p {
+    color: var(--negro-suave);
+    font-size: 0.9em;
+}
+
+/* Productos */
+.products {
+    padding: 3em 2em;
+    background-color: var(--blanco);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75em, 1fr));
+    gap: 2em;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: var(--blanco);
+    border: 0.125em solid var(--negro);
+    border-radius: 0.5em;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-0.3125em);
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+    border-color: var(--naranja-principal);
+}
+
+.product-image {
+    width: 100%;
+    height: 12.5em;
+    background-color: var(--gris-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gris);
+    font-size: 1.2em;
+}
+
+.product-content {
+    padding: 1.5em;
+}
+
+.product-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--verde-principal);
+    margin-bottom: 0.5em;
+}
+
+.product-content p {
+    color: var(--negro-suave);
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.product-price {
+    font-weight: 600;
+    color: var(--naranja-principal);
+    font-size: 1.1em;
+    margin-top: 0.5em;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--gris);
+    padding: 2em;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 75em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625em, 1fr));
+    gap: 2em;
+}
+
+.footer-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--verde-principal);
+    margin-bottom: 1em;
+}
+
+.footer-section p,
+.footer-section a {
+    color: var(--negro);
+    text-decoration: none;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.footer-section a:hover {
+    color: var(--naranja-principal);
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 0.0625em solid #ddd;
+}
+
+.contact-info span {
+    color: var(--negro);
+    font-weight: 600;
+}
+
+/* ========================================
+   ACTIVIDAD 13.1 - Buenas prácticas CSS
+   ======================================== */
+
+/* Reset adicional para consistencia */
+html {
+    font-size: 16px; /* Base para cálculos em */
+}
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mb-1 { margin-bottom: 0.5em; }
+.mb-2 { margin-bottom: 1em; }
+.mb-3 { margin-bottom: 1.5em; }
+.mb-4 { margin-bottom: 2em; }
+
+.mt-1 { margin-top: 0.5em; }
+.mt-2 { margin-top: 1em; }
+.mt-3 { margin-top: 1.5em; }
+.mt-4 { margin-top: 2em; }
+
+.p-1 { padding: 0.5em; }
+.p-2 { padding: 1em; }
+.p-3 { padding: 1.5em; }
+.p-4 { padding: 2em; }
+
+/* Responsive design */
+@media (max-width: 48em) { /* 768px */
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    
+    .nav-menu a {
+        min-width: auto;
+        text-align: left;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .form-container {
+        margin: 1em;
+        padding: 1.5em;
+    }
+    
+    table {
+        font-size: 0.875em;
+    }
+    
+    th, td {
+        padding: 0.5em 0.25em;
+    }
+}
+
+@media (max-width: 30em) { /* 480px */
+    body {
+        padding-top: 6em;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1.25em;
+    }
+    
+    .whatsapp-fixed {
+        bottom: 1em;
+        right: 1em;
+        width: 3em;
+        height: 3em;
+    }
+}
+
+/* Accesibilidad */
+.sr-only {
+    position: absolute;
+    width: 0.0625em;
+    height: 0.0625em;
+    padding: 0;
+    margin: -0.0625em;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus visible para accesibilidad */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 0.125em solid var(--naranja-principal);
+    outline-offset: 0.125em;
+}
+
+/* Animaciones suaves */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Optimización de rendimiento */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Print styles */
+@media print {
+    .whatsapp-fixed,
+    .header {
+        display: none;
+    }
+    
+    body {
+        padding-top: 0;
+    }
+    
+    a {
+        color: var(--negro) !important;
+        text-decoration: underline;
+    }
+}
